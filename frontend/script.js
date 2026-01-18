@@ -16,7 +16,7 @@ async function generateContent() {
 
     try {
         const response = await fetch(
-            `http://127.0.0.1:8000/generate?topic=${encodeURIComponent(topic)}`
+            `https://contentcraft-ai-backend.onrender.com/generate?topic=${encodeURIComponent(topic)}`
         );
 
         const data = await response.json();
